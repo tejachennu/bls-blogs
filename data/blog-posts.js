@@ -1,18 +1,383 @@
 /** @type {import('../types/blog.js').BlogPost} */
+// export const pccBlogPost = {
+//   id: "pcc-guide",
+//   title: "Police Clearance Certificate (PCC) Guide for Indians in Canada - BLS India Canada",
+//   slug: "police-clearance-certificate",
+//   author: {
+//     name: "IndiaHelpDesk Team",
+//     role: "Immigration Specialists",
+//     avatar: "/pcc.png",
+//   },
+//   date: "December 12, 2024",
+//   readTime: "8 min read",
+//   excerpt:
+//     "Complete guide for Indian citizens in Canada to obtain a Police Clearance Certificate (PCC) through BLS India Canada. Step-by-step process, required documents, fees, and expert assistance.",
+//   featuredImage: "/pcc.png?height=400&width=800",
+//   tags: ["PCC", "BLS India Canada", "Police Clearance", "Immigration", "Indian Documents", "IndiaHelpDesk"],
+//   categories: ["Immigration", "Documents", "BLS Services"],
+//   content: [
+//     {
+//       id: "intro",
+//       type: "paragraph",
+//       content:
+//         "Police Clearance Certificate (PCC) is not a Passport service. Issue of PCC is a distinct miscellaneous service rendered on behalf of Police authorities in India through BLS India Canada centers across the country.",
+//     },
+//     {
+//       id: "description",
+//       type: "paragraph",
+//       content:
+//         "If you're an Indian citizen living in Canada and need a Police Clearance Certificate (PCC)—whether it's for immigration, employment, permanent residency, or other legal purposes—you're not alone. The PCC is an essential document that certifies you have no criminal background during your stay in India. BLS India Canada provides comprehensive services to help you obtain your PCC efficiently.",
+//     },
+//     {
+//       id: "what-is-pcc",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "What is a Police Clearance Certificate?",
+//       anchor: "what-is-pcc",
+//     },
+//     {
+//       id: "pcc-definition",
+//       type: "paragraph",
+//       content:
+//         "A Police Clearance Certificate is an official document issued by the police authorities in India that certifies whether an individual has any criminal record or pending cases. It's commonly required for immigration applications, employment verification, and various legal procedures.",
+//     },
+//     {
+//       id: "pcc-uses",
+//       type: "list",
+//       items: [
+//         { content: "Canadian Permanent Residence applications", children: [] },
+//         { content: "Employment background verification", children: [] },
+//         { content: "Visa applications for other countries", children: [] },
+//         { content: "Educational institution requirements", children: [] },
+//         { content: "Legal proceedings and court cases", children: [] },
+//       ],
+//     },
+//     {
+//       id: "documents-heading",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "Required Documents for PCC Application",
+//       anchor: "required-documents",
+//     },
+//     {
+//       id: "documents-list",
+//       type: "orderedList",
+//       items: [
+//         {
+//           content: "Online Application Form (Fill online at Passport India portal)",
+//           children: [],
+//         },
+//         {
+//           content: "Indian Passport First and Last Page (Clear copies)",
+//           children: [],
+//         },
+//         {
+//           content: "Status in Canada Documentation",
+//           children: [
+//             { content: "Study permit (for students)", children: [] },
+//             { content: "Work permit (for workers)", children: [] },
+//             { content: "Visitor status documentation", children: [] },
+//             { content: "If expired, attach extension letter", children: [] },
+//           ],
+//         },
+//         {
+//           content: "Marriage Certificate (If applicable)",
+//           children: [
+//             { content: "Required only if spouse name is not mentioned in passport", children: [] },
+//             { content: "Must be certified copy", children: [] },
+//           ],
+//         },
+//         {
+//           content: "Indian Address Proof",
+//           children: [
+//             { content: "Indian driver's license", children: [] },
+//             { content: "Aadhar card", children: [] },
+//             { content: "Voter ID", children: [] },
+//             { content: "Relative's address proof with declaration (if your address matches passport)", children: [] },
+//           ],
+//         },
+//         {
+//           content: "Canadian Address Proof",
+//           children: [
+//             { content: "Canadian driver's license", children: [] },
+//             { content: "Government issued photo ID", children: [] },
+//             { content: "Utility bill (recent)", children: [] },
+//           ],
+//         },
+//         {
+//           content: "Passport-size Photographs (2x2 inches)",
+//           children: [
+//             { content: "Two recent photographs with white background", children: [] },
+//             { content: "One photograph pasted on application form", children: [] },
+//             { content: "Size: 51mm x 51mm", children: [] },
+//             { content: "Dark colored clothing recommended", children: [] },
+//             { content: "Eyes open, shoulders visible", children: [] },
+//           ],
+//         },
+//         {
+//           content: "Application Fees and Checklist",
+//           children: [
+//             { content: "Download official checklist from BLS India Canada", children: [] },
+//             { content: "Fees vary by application type", children: [] },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       id: "application-form",
+//       type: "heading",
+//       level: 2,
+//       content: "How to Fill the Online Application Form",
+//       anchor: "application-form",
+//     },
+//     {
+//       id: "form-steps",
+//       type: "timeline",
+//       events: [
+//         {
+//           title: "Visit Passport India Portal",
+//           description: "Go to the official Passport India website and create an account",
+//           duration: "5 minutes",
+//         },
+//         {
+//           title: "Select PCC Application",
+//           description: "Choose 'Police Clearance Certificate' from the services menu",
+//           duration: "2 minutes",
+//         },
+//         {
+//           title: "Fill Personal Details",
+//           description: "Enter your personal information, passport details, and addresses",
+//           duration: "10 minutes",
+//         },
+//         {
+//           title: "Upload Documents",
+//           description: "Upload scanned copies of required documents",
+//           duration: "5 minutes",
+//         },
+//         {
+//           title: "Review and Submit",
+//           description: "Review all information and submit the application",
+//           duration: "3 minutes",
+//         },
+//         {
+//           title: "Print Application",
+//           description: "Print the completed application form for submission",
+//           duration: "2 minutes",
+//         },
+//       ],
+//     },
+//     {
+//       id: "form-button",
+//       type: "button",
+//       content: "Fill Application Form Online",
+//       href: "https://portal3.passportindia.gov.in/Online/index.html",
+//       variant: "default",
+//     },
+//     {
+//       id: "fees-heading",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "PCC Application Fees - BLS India Canada",
+//       anchor: "fees",
+//     },
+//     {
+//       id: "fees-table",
+//       type: "table",
+//       headers: ["Service Type", "BLS Fee", "Government Fee", "Total Fee"],
+//       rows: [
+//         ["PCC - Postal Application", "$25.00", "$47.70", "$72.70"],
+//         ["PCC - Walk-in Application", "$25.00", "$47.70", "$72.70"],
+//         ["Express Service", "$35.00", "$47.70", "$82.70"],
+//         ["Premium Service", "$50.00", "$47.70", "$97.70"],
+//       ],
+//     },
+//     {
+//       id: "payment-methods",
+//       type: "card",
+//       title: "Payment Methods Accepted",
+//       className: "bg-green-50",
+//       children: [
+//         {
+//           id: "payment-list",
+//           type: "list",
+//           items: [
+//             { content: "Cash (for walk-in applications)", children: [] },
+//             { content: "Debit Card (Visa, MasterCard)", children: [] },
+//             { content: "Credit Card (Visa, MasterCard)", children: [] },
+//             { content: "Bank Draft (for postal applications)", children: [] },
+//             { content: "Money Order (payable to BLS International Services Canada Inc)", children: [] },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       id: "processing-time",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "Processing Time and Tracking",
+//       anchor: "processing-time",
+//     },
+//     {
+//       id: "processing-info",
+//       type: "card",
+//       title: "Expected Processing Times",
+//       className: "bg-blue-50",
+//       children: [
+//         {
+//           id: "processing-list",
+//           type: "list",
+//           items: [
+//             { content: "Regular Service: 15-20 working days", children: [] },
+//             { content: "Express Service: 10-15 working days", children: [] },
+//             { content: "Premium Service: 7-10 working days", children: [] },
+//             { content: "Emergency cases: Contact BLS India Canada directly", children: [] },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       id: "bls-centers",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "BLS India Canada Center Locations",
+//       anchor: "bls-centers",
+//     },
+//     {
+//       id: "center-locations",
+//       type: "contact",
+//       contacts: [
+//         {
+//           office: "BLS India Canada - Toronto",
+//           address: "BLS International Services Canada Inc, 505 Consumers Rd, Suite 201, Toronto, ON M2J 4V8",
+//           phone: "+1-416-491-9700",
+//           email: "info.canada@blsinternational.com",
+//           hours: "Monday to Friday: 9:00 AM - 5:00 PM",
+//         },
+//         {
+//           office: "BLS India Canada - Vancouver",
+//           address: "BLS International Services Canada Inc, 8888 Country Hills Blvd NW, Suite 221, Calgary, AB T3G 5T4",
+//           phone: "+1-403-444-4889",
+//           email: "info.canada@blsinternational.com",
+//           hours: "Monday to Friday: 9:00 AM - 5:00 PM",
+//         },
+//         {
+//           office: "BLS India Canada - Ottawa",
+//           address: "BLS International Services Canada Inc, 112 Kent St, Suite 200, Ottawa, ON K1P 5P2",
+//           phone: "+1-613-233-6136",
+//           email: "info.canada@blsinternational.com",
+//           hours: "Monday to Friday: 9:00 AM - 5:00 PM",
+//         },
+//       ],
+//     },
+//     {
+//       id: "checklist-section",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "Document Checklist",
+//       anchor: "checklist",
+//     },
+//     {
+//       id: "document-checklist",
+//       type: "checklist",
+//       title: "PCC Application Checklist",
+//       items: [
+//         "Completed online application form (printed)",
+//         "Original passport + photocopy of first and last page",
+//         "Status in Canada documents (study/work permit)",
+//         "Marriage certificate (if applicable)",
+//         "Indian address proof",
+//         "Canadian address proof",
+//         "Two passport-size photographs (2x2 inches)",
+//         "Application fees (cash/card/draft)",
+//         "Self-addressed return envelope (for postal)",
+//         "BLS checklist form (downloaded and filled)",
+//       ],
+//     },
+//     {
+//       id: "faq-section",
+//       type: "basicHeading",
+//       level: 2,
+//       content: "Frequently Asked Questions",
+//       anchor: "faq",
+//     },
+//     {
+//       id: "pcc-faq",
+//       type: "faq",
+//       questions: [
+//         {
+//           question: "How long is a PCC valid?",
+//           answer:
+//             "A Police Clearance Certificate is typically valid for 6 months from the date of issue. However, some countries or organizations may accept older certificates, so check specific requirements.",
+//         },
+//         {
+//           question: "Can I apply for PCC if I've never lived in India?",
+//           answer:
+//             "If you were born in India but never lived there as an adult, you may still need a PCC. Contact BLS India Canada for specific guidance based on your situation.",
+//         },
+//         {
+//           question: "What if my Indian address has changed?",
+//           answer:
+//             "You need to provide address proof for all addresses where you lived in India. If you can't provide proof for old addresses, submit a declaration explaining the situation.",
+//         },
+//         {
+//           question: "Can someone else submit my application?",
+//           answer:
+//             "Yes, you can authorize someone else to submit your application with a proper authorization letter and their identification documents.",
+//         },
+//         {
+//           question: "What if my PCC application is rejected?",
+//           answer:
+//             "If rejected, BLS India Canada will provide reasons. You can reapply after addressing the issues. Common reasons include incomplete documents or unclear photographs.",
+//         },
+//         {
+//           question: "Do I need PCC for each state I lived in India?",
+//           answer:
+//             "Generally, one PCC covers your entire stay in India. However, some countries may require state-specific PCCs. Check with the requesting authority.",
+//         },
+//       ],
+//     },
+//     {
+//       id: "help-section",
+//       type: "cta",
+//       title: "Need Professional Assistance?",
+//       description:
+//         "Our IndiaHelpDesk team provides expert guidance for PCC applications through BLS India Canada. We ensure your application is complete and error-free.",
+//       buttonText: "Get Expert Help Now",
+//       buttonHref: "https://blsindia-canada.ca/services",
+//     },
+//     {
+//       id: "important-notes",
+//       type: "alert",
+//       title: "Important Reminders",
+//       content:
+//         "Always verify the latest requirements and fees on the official BLS India Canada website before submitting your application. Requirements may change, and it's essential to have the most current information.",
+//       variant: "info",
+//     },
+//   ],
+//   seo: {
+//     metaTitle: "PCC Guide - BLS India Canada | Police Clearance Certificate | IndiaHelpDesk",
+//     metaDescription:
+//       "Complete guide to obtain Police Clearance Certificate through BLS India Canada. Step-by-step process, documents, fees, and expert assistance for Indian citizens in Canada.",
+//     focusKeywords: ["BLS India Canada", "Police Clearance Certificate", "PCC", "IndiaHelpDesk", "BLS India Canada PCC"],
+//     canonicalUrl: "https://indiahelpdesk.ca/blsindia-canada/police-clearance-certificate-guide-bls-india-canada",
+//     ogImage: "/og-pcc-guide.jpg",
+//     noIndex: false,
+//   },
+// }
 export const pccBlogPost = {
   id: "pcc-guide",
   title: "Police Clearance Certificate (PCC) Guide for Indians in Canada - BLS India Canada",
-  slug: "police-clearance-certificate-guide-bls-india-canada",
+  slug: "police-clearance-certificate",
   author: {
     name: "IndiaHelpDesk Team",
     role: "Immigration Specialists",
-    avatar: "/placeholder.svg?height=40&width=40",
+    avatar: "/pcc.png",
   },
   date: "December 12, 2024",
   readTime: "8 min read",
   excerpt:
     "Complete guide for Indian citizens in Canada to obtain a Police Clearance Certificate (PCC) through BLS India Canada. Step-by-step process, required documents, fees, and expert assistance.",
-  featuredImage: "/placeholder.svg?height=400&width=800",
+  featuredImage: "/pcc.png?height=400&width=800",
   tags: ["PCC", "BLS India Canada", "Police Clearance", "Immigration", "Indian Documents", "IndiaHelpDesk"],
   categories: ["Immigration", "Documents", "BLS Services"],
   content: [
@@ -20,48 +385,48 @@ export const pccBlogPost = {
       id: "intro",
       type: "paragraph",
       content:
-        "Police Clearance Certificate (PCC) is not a Passport service. Issue of PCC is a distinct miscellaneous service rendered on behalf of Police authorities in India through BLS India Canada centers across the country.",
+        "Police Clearance Certificate (PCC) is not a Passport service. It is a distinct miscellaneous service rendered on behalf of Police authorities in India through BLS India Canada centers across the country.",
     },
     {
       id: "description",
       type: "paragraph",
       content:
-        "If you're an Indian citizen living in Canada and need a Police Clearance Certificate (PCC)—whether it's for immigration, employment, permanent residency, or other legal purposes—you're not alone. The PCC is an essential document that certifies you have no criminal background during your stay in India. BLS India Canada provides comprehensive services to help you obtain your PCC efficiently.",
+        "If you're an Indian citizen living in Canada and need a Police Clearance Certificate (PCC)—whether it's for immigration, employment, permanent residency, or other legal purposes—you're not alone. The PCC is an essential document that certifies you have no criminal background during your stay in India. The process to obtain one while living abroad is straightforward, although it might seem overwhelming at first.",
     },
-    {
-      id: "what-is-pcc",
-      type: "heading",
-      level: 2,
-      content: "What is a Police Clearance Certificate?",
-      anchor: "what-is-pcc",
-    },
-    {
-      id: "pcc-definition",
-      type: "paragraph",
-      content:
-        "A Police Clearance Certificate is an official document issued by the police authorities in India that certifies whether an individual has any criminal record or pending cases. It's commonly required for immigration applications, employment verification, and various legal procedures.",
-    },
-    {
-      id: "pcc-uses",
-      type: "list",
-      items: [
-        { content: "Canadian Permanent Residence applications", children: [] },
-        { content: "Employment background verification", children: [] },
-        { content: "Visa applications for other countries", children: [] },
-        { content: "Educational institution requirements", children: [] },
-        { content: "Legal proceedings and court cases", children: [] },
-      ],
-    },
+    // {
+    //   id: "what-is-pcc",
+    //   type: "basicHeading",
+    //   level: 2,
+    //   content: "What is a Police Clearance Certificate?",
+    //   anchor: "what-is-pcc",
+    // },
+    // {
+    //   id: "pcc-definition",
+    //   type: "paragraph",
+    //   content:
+    //     "A Police Clearance Certificate is an official document issued by the police authorities in India that certifies whether an individual has any criminal record or pending cases. It's commonly required for immigration applications, employment verification, and various legal procedures.",
+    // },
+    // {
+    //   id: "pcc-uses",
+    //   type: "list",
+    //   items: [
+    //     { content: "Canadian Permanent Residence applications", children: [] },
+    //     { content: "Employment background verification", children: [] },
+    //     { content: "Visa applications for other countries", children: [] },
+    //     { content: "Educational institution requirements", children: [] },
+    //     { content: "Legal proceedings and court cases", children: [] },
+    //   ],
+    // },
     {
       id: "documents-heading",
-      type: "heading",
+      type: "basicHeading",
       level: 2,
       content: "Required Documents for PCC Application",
       anchor: "required-documents",
     },
     {
       id: "documents-list",
-      type: "orderedList",
+      type: "list",
       items: [
         {
           content: "Online Application Form (Fill online at Passport India portal)",
@@ -72,36 +437,27 @@ export const pccBlogPost = {
           children: [],
         },
         {
-          content: "Status in Canada Documentation",
+          content: "Status in Canada (Study permit/Work permit/Visitor Status)",
           children: [
-            { content: "Study permit (for students)", children: [] },
-            { content: "Work permit (for workers)", children: [] },
-            { content: "Visitor status documentation", children: [] },
-            { content: "If expired, attach extension letter", children: [] },
+            { content: " In-case of expired permit, attach the extension letter", children: [] },
           ],
         },
         {
-          content: "Marriage Certificate (If applicable)",
+          content: "Marriage Certificate (Additional / Optional document - If Married)",
           children: [
-            { content: "Required only if spouse name is not mentioned in passport", children: [] },
-            { content: "Must be certified copy", children: [] },
+            { content: "Attach only if your passport does not contain your spouse name", children: [] },
+
           ],
         },
         {
-          content: "Indian Address Proof",
+          content: "Indian address proof (Indian driver license/aadhar card/voter id/any relative address proof with declaration)",
           children: [
-            { content: "Indian driver's license", children: [] },
-            { content: "Aadhar card", children: [] },
-            { content: "Voter ID", children: [] },
-            { content: "Relative's address proof with declaration (if your address matches passport)", children: [] },
+            { content: "In-case your Indian address matches with your last page of your Indian passport then no separate Indian address proof is required", children: [] },
           ],
         },
         {
-          content: "Canadian Address Proof",
+          content: "Canadian address Proof (Driving License//Government Issued Photo ID/Utility Bill)",
           children: [
-            { content: "Canadian driver's license", children: [] },
-            { content: "Government issued photo ID", children: [] },
-            { content: "Utility bill (recent)", children: [] },
           ],
         },
         {
@@ -125,7 +481,7 @@ export const pccBlogPost = {
     },
     {
       id: "application-form",
-      type: "heading",
+      type: "basicHeading",
       level: 2,
       content: "How to Fill the Online Application Form",
       anchor: "application-form",
@@ -137,32 +493,32 @@ export const pccBlogPost = {
         {
           title: "Visit Passport India Portal",
           description: "Go to the official Passport India website and create an account",
-          duration: "5 minutes",
+          
         },
         {
           title: "Select PCC Application",
           description: "Choose 'Police Clearance Certificate' from the services menu",
-          duration: "2 minutes",
+          
         },
         {
           title: "Fill Personal Details",
           description: "Enter your personal information, passport details, and addresses",
-          duration: "10 minutes",
+        
         },
         {
           title: "Upload Documents",
           description: "Upload scanned copies of required documents",
-          duration: "5 minutes",
+          
         },
         {
           title: "Review and Submit",
           description: "Review all information and submit the application",
-          duration: "3 minutes",
+          
         },
         {
           title: "Print Application",
           description: "Print the completed application form for submission",
-          duration: "2 minutes",
+          
         },
       ],
     },
@@ -173,105 +529,33 @@ export const pccBlogPost = {
       href: "https://portal3.passportindia.gov.in/Online/index.html",
       variant: "default",
     },
-    {
-      id: "fees-heading",
-      type: "heading",
-      level: 2,
-      content: "PCC Application Fees - BLS India Canada",
-      anchor: "fees",
-    },
-    {
-      id: "fees-table",
-      type: "table",
-      headers: ["Service Type", "BLS Fee", "Government Fee", "Total Fee"],
-      rows: [
-        ["PCC - Postal Application", "$25.00", "$47.70", "$72.70"],
-        ["PCC - Walk-in Application", "$25.00", "$47.70", "$72.70"],
-        ["Express Service", "$35.00", "$47.70", "$82.70"],
-        ["Premium Service", "$50.00", "$47.70", "$97.70"],
-      ],
-    },
-    {
-      id: "payment-methods",
-      type: "card",
-      title: "Payment Methods Accepted",
-      className: "bg-green-50",
-      children: [
-        {
-          id: "payment-list",
-          type: "list",
-          items: [
-            { content: "Cash (for walk-in applications)", children: [] },
-            { content: "Debit Card (Visa, MasterCard)", children: [] },
-            { content: "Credit Card (Visa, MasterCard)", children: [] },
-            { content: "Bank Draft (for postal applications)", children: [] },
-            { content: "Money Order (payable to BLS International Services Canada Inc)", children: [] },
-          ],
-        },
-      ],
-    },
-    {
-      id: "processing-time",
-      type: "heading",
-      level: 2,
-      content: "Processing Time and Tracking",
-      anchor: "processing-time",
-    },
-    {
-      id: "processing-info",
-      type: "card",
-      title: "Expected Processing Times",
-      className: "bg-blue-50",
-      children: [
-        {
-          id: "processing-list",
-          type: "list",
-          items: [
-            { content: "Regular Service: 15-20 working days", children: [] },
-            { content: "Express Service: 10-15 working days", children: [] },
-            { content: "Premium Service: 7-10 working days", children: [] },
-            { content: "Emergency cases: Contact BLS India Canada directly", children: [] },
-          ],
-        },
-      ],
-    },
-    {
-      id: "bls-centers",
-      type: "heading",
-      level: 2,
-      content: "BLS India Canada Center Locations",
-      anchor: "bls-centers",
-    },
-    {
-      id: "center-locations",
-      type: "contact",
-      contacts: [
-        {
-          office: "BLS India Canada - Toronto",
-          address: "BLS International Services Canada Inc, 505 Consumers Rd, Suite 201, Toronto, ON M2J 4V8",
-          phone: "+1-416-491-9700",
-          email: "info.canada@blsinternational.com",
-          hours: "Monday to Friday: 9:00 AM - 5:00 PM",
-        },
-        {
-          office: "BLS India Canada - Vancouver",
-          address: "BLS International Services Canada Inc, 8888 Country Hills Blvd NW, Suite 221, Calgary, AB T3G 5T4",
-          phone: "+1-403-444-4889",
-          email: "info.canada@blsinternational.com",
-          hours: "Monday to Friday: 9:00 AM - 5:00 PM",
-        },
-        {
-          office: "BLS India Canada - Ottawa",
-          address: "BLS International Services Canada Inc, 112 Kent St, Suite 200, Ottawa, ON K1P 5P2",
-          phone: "+1-613-233-6136",
-          email: "info.canada@blsinternational.com",
-          hours: "Monday to Friday: 9:00 AM - 5:00 PM",
-        },
-      ],
-    },
+      {
+    "id": "component-1749921319253-2o16gh7zj",
+    "type": "basicHeading",
+    "level": 2,
+    "content": "PCC Application Fees",
+    "anchor": "",
+    "className": ""
+  },
+  {
+    "id": "component-1749921699827-q3qxnepnf",
+    "type": "orderedList",
+    "items": [
+      {
+        "content": "For Postal Applications: The fee is $38.70 and must be paid via Bank Draft or Money Order, payable to BLS International Services Canada Inc.",
+        "children": []
+      },
+      {
+        "content": "For Walk-in Applications: The fee can be paid by Cash or Debit Card at the service counter.",
+        "children": []
+      }
+    ],
+    "className": ""
+  },
+
     {
       id: "checklist-section",
-      type: "heading",
+      type: "basicHeading",
       level: 2,
       content: "Document Checklist",
       anchor: "checklist",
@@ -295,7 +579,7 @@ export const pccBlogPost = {
     },
     {
       id: "faq-section",
-      type: "heading",
+      type: "basicHeading",
       level: 2,
       content: "Frequently Asked Questions",
       anchor: "faq",
@@ -339,20 +623,35 @@ export const pccBlogPost = {
     {
       id: "help-section",
       type: "cta",
-      title: "Need Professional Assistance?",
+      title: "Need Help Filling form or Submitting documents?",
       description:
-        "Our IndiaHelpDesk team provides expert guidance for PCC applications through BLS India Canada. We ensure your application is complete and error-free.",
+        "Our guidance ensures your application is complete, avoiding delays or rejections, with clear instructions on form completion and required documents.",
       buttonText: "Get Expert Help Now",
       buttonHref: "https://blsindia-canada.ca/services",
     },
-    {
-      id: "important-notes",
-      type: "alert",
-      title: "Important Reminders",
-      content:
-        "Always verify the latest requirements and fees on the official BLS India Canada website before submitting your application. Requirements may change, and it's essential to have the most current information.",
-      variant: "info",
-    },
+     {
+    "id": "component-1749922350944-p9j6d3cev",
+    "type": "basicHeading",
+    "level": 2,
+    "content": "Postal Application",
+    "anchor": "",
+    "className": ""
+  },
+  {
+    "id": "component-1749922374900-dukbg3qet",
+    "type": "paragraph",
+    "content": "Kindly click the button below to arrange for courier pickup and drop-off to the respective BLS\ncenter.\n",
+    "className": ""
+  },
+  {
+    "id": "component-1749922385882-9zffi6nyf",
+    "type": "link",
+    "href": "https://blsindia-canada.ca/pickup-instructions",
+    "content": "https://blsindia-canada.ca/pickup-instructions",
+    "isExternal": true,
+    "className": ""
+  }
+   
   ],
   seo: {
     metaTitle: "PCC Guide - BLS India Canada | Police Clearance Certificate | IndiaHelpDesk",
@@ -363,7 +662,8 @@ export const pccBlogPost = {
     ogImage: "/og-pcc-guide.jpg",
     noIndex: false,
   },
-}
+};
+
 
 /** @type {import('../types/blog.js').BlogPost} */
 export const passportRenewalPost = {

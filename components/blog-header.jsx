@@ -99,7 +99,7 @@ export function BlogHeader() {
             Home
           </Link>
           <Link
-            href="/blog"
+            href="/blsindia-canada"
             className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
           >
             Blog

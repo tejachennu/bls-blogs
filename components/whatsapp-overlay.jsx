@@ -23,7 +23,7 @@ export function WhatsAppOverlay() {
   const whatsappMessage = encodeURIComponent(
     "Hi! I need assistance with Indian consular services through BLS India Canada. Can you help me?",
   )
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${whatsappMessage}`
+  const whatsappUrl = `https://api.whatsapp.com/send/?phone=%2B12892012094&text=Hi+India+Visa+and+Consular+Services%2C+I+would+like+to+inquire+about+courier+services.&type=phone_number&app_absent=0`
 
   if (!isVisible) return null
 
@@ -113,13 +113,13 @@ export function WhatsAppOverlay() {
                 </Link>
 
                 <div className="grid grid-cols-2 gap-2">
-                  <Link href="tel:+14164919700">
+                  <Link href="tel:+12892012094">
                     <Button variant="outline" size="sm" className="w-full text-xs">
                       <Phone className="h-3 w-3 mr-1" />
                       Call Us
                     </Button>
                   </Link>
-                  <Link href="mailto:info@indiahelpdesk.ca">
+                  <Link href="mailto:info@blsindia-canada.ca">
                     <Button variant="outline" size="sm" className="w-full text-xs">
                       <Mail className="h-3 w-3 mr-1" />
                       Email

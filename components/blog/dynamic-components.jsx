@@ -134,7 +134,7 @@ export function DynamicListItem({ content, children }) {
   return (
     <li className="mb-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
       <div className="flex items-start gap-2">
-        <CheckCheck className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
+        <CircleCheck className="h-4 w-4 text-blue-500 mt-0.5 flex-shrink-0" />
         <span>{content}</span>
       </div>
       <ul className="ml-6 mt-2 space-y-2">
@@ -151,12 +151,12 @@ export function DynamicList({ type, items, className }) {
     type === "orderedList" ? (
       <div className="flex items-center gap-2 mb-3 bg-blue-50 dark:bg-blue-900/20 p-2 rounded-md">
         <FileCheck className="h-5 w-5 text-blue-500" />
-        <span className="font-medium text-sm text-blue-700 dark:text-blue-300">Required Documents</span>
+        <span className="font-medium text-sm text-blue-700 dark:text-blue-300">Key Points</span>
       </div>
     ) : (
       <div className="flex items-center gap-2 mb-3 bg-green-50 dark:bg-green-900/20 p-2 rounded-md">
         <ListChecks className="h-5 w-5 text-green-500" />
-        <span className="font-medium text-sm text-green-700 dark:text-green-300">Key Points</span>
+        <span className="font-medium text-sm text-green-700 dark:text-green-300">Required Documents</span>
       </div>
     )
 
