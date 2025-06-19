@@ -157,7 +157,8 @@ const componentTemplates = {
 }
 
 export default function AdminBlogPage() {
-  const [blogPost, setBlogPost] = useState(getAllBlogPosts()[0])
+  const [mounted, setMounted] = useState(false)
+  const [blogPost, setBlogPost] = useState()
   const [jsonView, setJsonView] = useState("")
   const [jsonError, setJsonError] = useState("")
   const [activeTab, setActiveTab] = useState("visual")
@@ -166,9 +167,30 @@ export default function AdminBlogPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("all")
 
+  // Ensure component only renders on client
+  useEffect(() => {
+    setMounted(true)
+    // Initialize with first blog post only after mounting
+    const posts = getAllBlogPosts()
+    if (posts.length > 0) {
+      setBlogPost(posts[0])
+      setJsonView(JSON.stringify(posts[0], null, 2))
+    }
+  }, [])
+
+  if (!mounted || !blogPost) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading admin panel...</p>
+        </div>
+      </div>
+    )
+  }
+
   const posts = getAllBlogPosts()
 
-  // Filter posts based on search and category
   const filteredPosts = posts.filter((post) => {
     const matchesSearch =
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
