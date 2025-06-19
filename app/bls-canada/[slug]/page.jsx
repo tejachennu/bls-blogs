@@ -142,12 +142,12 @@ export default function CategoryPage({ params }) {
               {posts.map((post) => (
                 <Card key={post.id} className="overflow-hidden hover:shadow-md transition-shadow">
                   {post.featuredImage ? (
-                    <div className="h-48 bg-gray-200">
+                    <div className="h-64 bg-gray-200">
                       <Image
                         src={post.featuredImage || "/placeholder.svg"}
                         alt={post.title}
                         width={400}
-                        height={200}
+                        height={300}
                         className="h-full w-full object-cover"
                       />
                     </div>

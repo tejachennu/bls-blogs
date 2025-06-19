@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageCircle, X, Phone, Mail, Clock, Users } from "lucide-react"
+import { MessageCircle, X, Phone, Mail, Clock, Users, Import } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function WhatsAppOverlay() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,10 +34,10 @@ export function WhatsAppOverlay() {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="h-24 w-24 rounded-full bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all duration-300"
           size="icon"
         >
-          <MessageCircle className="h-6 w-6 text-white" />
+          <Image src="/icons8-whatsapp-144.png" height={64} width={64} className="h-16 w-16 text-white " />
         </Button>
       </div>
 
@@ -49,7 +50,7 @@ export function WhatsAppOverlay() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center">
-                    <MessageCircle className="h-5 w-5" />
+                    <Image src="/icons8-whatsapp-144.png" height={20} width={20} className="h-5 w-5 text-white " />
                   </div>
                   <div>
                     <CardTitle className="text-sm font-medium">IndiaHelpDesk Support</CardTitle>
@@ -107,7 +108,7 @@ export function WhatsAppOverlay() {
               <div className="space-y-2">
                 <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-green-500 hover:bg-green-600 text-white" size="sm">
-                    <MessageCircle className="h-4 w-4 mr-2" />
+                    <Image src="/icons8-whatsapp-144.png" height={16} width={16} className="h-4 w-4 mr-2 text-white " />
                     Chat on WhatsApp
                   </Button>
                 </Link>
